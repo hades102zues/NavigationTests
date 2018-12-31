@@ -1,10 +1,19 @@
-import React from 'react';
+import React,  { Component } from 'react';
 import { View, Text } from 'react-native';
 
-const settings = () => (
-	<View>
-		<Text>Settings</Text>
-	</View>
-);
+class Settings extends Component {
+	
+	static navigationOptions = {
+		title: 'Settings'
+	};
 
-export default settings;
+	render() {
+		return (
+			<View>
+				<Text>Settings</Text>
+			</View>
+		);
+	}
+}
+
+export default Settings;

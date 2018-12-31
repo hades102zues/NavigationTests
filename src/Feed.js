@@ -1,10 +1,19 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { View, Text } from 'react-native';
 
-const feed = () => (
-	<View>
-		<Text>Feed</Text>
-	</View>
-);
+class feed extends Component {
+
+	static navigationOptions = {
+		title: 'Feed'
+	}; 
+
+	render() {
+		return (
+			<View>
+				<Text>Feed</Text>
+			</View>
+		);
+	}
+}
 
 export default feed;

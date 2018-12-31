@@ -1,10 +1,27 @@
-import React from 'react';
-import { View, Text } from 'react-native';
+import React,  { Component } from 'react';
+import { View, Text, Button } from 'react-native';
 
-const home = () => (
-	<View>
-		<Text>Home</Text>
-	</View>
-);
+class Home extends Component{
 
-export default home;
+	static navigationOptions = {
+		title: 'Home'
+	};
+
+	render() {
+		return (
+			<React.Fragment>
+				<View>
+					<Text>Home</Text>
+					<Button 
+					title="Feed"
+					onPress={()=>this.props.navigation.navigate('Feed')}
+					/>
+					
+				</View>
+			</React.Fragment>
+		);
+	}
+}
+
+export default Home;
+
