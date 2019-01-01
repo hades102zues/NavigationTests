@@ -14,24 +14,17 @@ class Home extends Component{
 
 	render() {
 		return (
-			<View>
-				<Text>Home</Text>
+			<View style={styles.MainView}>
 				<View style={styles.Buttons}>
-
-					<View style={styles.buttonFeed}>
 						<Button 
 						title="Feed"
 						onPress={()=>this.props.navigation.navigate('Feed')}
 						/>
-					</View>
-					<View style={styles.buttonSettings}>
+
 						<Button 
 						title="Settings"
 						onPress={()=>this.props.navigation.navigate('Settings')}
 						/>
-					</View>
-
-
 				</View>
 			</View>
 			
@@ -40,15 +33,17 @@ class Home extends Component{
 }
 
 const styles = StyleSheet.create({
-	Buttons: {
-		flexDirection : 'row',
+	
+	MainView : { 
+		alignItems: 'center',
+		justifyContent: 'center',
+		flex: 1
 	},
-	buttonFeed: {
-		width:'20%'
+
+	Buttons : {
+		width: '50%',
 	},
-	buttonSettings:{
-		width:'20%'
-	}
+
 });
 export default Home;
 
