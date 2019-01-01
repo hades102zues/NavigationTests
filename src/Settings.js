@@ -1,17 +1,6 @@
 import React,  { Component } from 'react';
 import { View, Text, Button, Image } from 'react-native';
 
-class LogoTitle extends React.Component {
-  render() {
-    return (
-      <Image
-        source={{uri: 'https://i.ytimg.com/vi/rUmXDhEtty0/maxresdefault.jpg'}}
-        style={{ width: 30, height: 30 }}
-      />
-    );
-  }
-}
-
 
 
 class Settings extends Component {
