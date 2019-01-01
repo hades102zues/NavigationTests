@@ -4,7 +4,11 @@ import { View, Text } from 'react-native';
 class feed extends Component {
 
 	static navigationOptions = {
-		title: 'Feed'
+		title: 'Feed',
+		headerTintColor: 'white',
+		headerStyle : {
+			backgroundColor: 'red'
+		},
 	}; 
 
 	render() {
